@@ -34,7 +34,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
         backgroundColor: Theme.of(context).dialogBackgroundColor,
         title: Text(
           _payload.toString().split('|')[0],
-          style: TextStyle(color: Colors.white, fontSize: 20),
+          style: const TextStyle(color: Colors.white, fontSize: 20),
         ),
       ),
       body: SafeArea(
@@ -67,8 +67,8 @@ class _NotificationScreenState extends State<NotificationScreen> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                margin: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                margin: const EdgeInsets.symmetric(
                   horizontal: 30,
                 ),
                 decoration: BoxDecoration(
@@ -79,7 +79,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.text_format,
@@ -98,17 +98,17 @@ class _NotificationScreenState extends State<NotificationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Text(
                         _payload.toString().split('|')[0],
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: const TextStyle(color: Colors.white, fontSize: 20),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.description,
@@ -127,18 +127,18 @@ class _NotificationScreenState extends State<NotificationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Text(
                         _payload.toString().split('|')[1],
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: const TextStyle(color: Colors.white, fontSize: 20),
                         textAlign: TextAlign.justify,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.calendar_month_outlined,
@@ -157,12 +157,12 @@ class _NotificationScreenState extends State<NotificationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Text(
                         _payload.toString().split('|')[2],
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: const TextStyle(color: Colors.white, fontSize: 20),
                         textAlign: TextAlign.justify,
                       ),
                     ],

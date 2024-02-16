@@ -82,7 +82,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                     onPressed: () {
                       _getDateFromUser();
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.calendar_month_outlined,
                       color: Colors.grey,
                     ),
@@ -98,7 +98,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                           onPressed: () {
                             _getTimeFromUser(isStartTime: true);
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.access_alarms_rounded,
                             color: Colors.grey,
                           ),
@@ -116,7 +116,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                           onPressed: () {
                             _getTimeFromUser(isStartTime: false);
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.access_alarms_rounded,
                             color: Colors.grey,
                           ),
@@ -137,14 +137,14 @@ class _AddTaskPageState extends State<AddTaskPage> {
                             value: value.toString(),
                             child: Text(
                               '$value',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                               ),
                             ),
                           ),
                         )
                         .toList(),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.keyboard_arrow_down,
                       color: Colors.grey,
                     ),
@@ -173,14 +173,14 @@ class _AddTaskPageState extends State<AddTaskPage> {
                             value: value,
                             child: Text(
                               value,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                               ),
                             ),
                           ),
                         )
                         .toList(),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.keyboard_arrow_down,
                       color: Colors.grey,
                     ),
@@ -241,23 +241,23 @@ class _AddTaskPageState extends State<AddTaskPage> {
                 });
               },
               child: Padding(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   right: 8,
                 ),
                 child: CircleAvatar(
-                  child: index == _selectedColor
-                      ? Icon(
-                          Icons.done,
-                          size: 16,
-                          color: Colors.white,
-                        )
-                      : null,
                   backgroundColor: index == 0
                       ? primaryClr
                       : index == 1
                           ? pinkClr
                           : orangeClr,
                   radius: 14,
+                  child: index == _selectedColor
+                      ? const Icon(
+                          Icons.done,
+                          size: 16,
+                          color: Colors.white,
+                        )
+                      : null,
                 ),
               ),
             ),

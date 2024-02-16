@@ -14,7 +14,7 @@ class DBHelper {
     }
 
     try {
-      String _path = await getDatabasesPath() + 'task.db';
+      String _path = '${await getDatabasesPath()}task.db';
       debugPrint('in database path');
       _db = await openDatabase(_path, version: _version,
           onCreate: (Database db, int version) async {

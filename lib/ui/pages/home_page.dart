@@ -72,11 +72,11 @@ class _HomePageState extends State<HomePage> {
               color: Get.isDarkMode ? Colors.white : darkGreyClr,
             ),
           ),
-          CircleAvatar(
+          const CircleAvatar(
             backgroundImage: AssetImage('images/person.jpeg'),
             radius: 18,
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
         ],
@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
 
   _adTaskBar() {
     return Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         left: 20,
         right: 10,
         top: 10,
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
 
   _addDateBar() {
     return Container(
-      margin: EdgeInsets.only(left: 20, top: 6),
+      margin: const EdgeInsets.only(left: 20, top: 6),
       child: DatePicker(
         _selectedDate,
         width: 70,
@@ -145,19 +145,19 @@ class _HomePageState extends State<HomePage> {
           });
         },
         dateTextStyle: GoogleFonts.lato(
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
           color: Colors.grey,
         )),
         dayTextStyle: GoogleFonts.lato(
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           color: Colors.grey,
         )),
         monthTextStyle: GoogleFonts.lato(
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
           fontSize: 12,
           fontWeight: FontWeight.bold,
           color: Colors.grey,
